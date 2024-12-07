@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main() {
-    int random, guess = -1, attempts; 
-    random = rand() % (100 + 1);
+    int random, guess = -1, attempts = 0; 
+    
+    srand(time(NULL));
+    random = rand() % 100 + 1;
 
     printf("Welcome to the Guessing Game!\n");
     while (guess != random) {
