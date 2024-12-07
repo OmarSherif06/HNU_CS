@@ -1,7 +1,7 @@
-colors = set()
+a = input("Enter first color: ")
+b = input("Enter second color: ")
+c = input("Enter third color: ")
 
-colors.add(input("Enter first color: "))
-colors.add(input("Enter second color: "))
-colors.add(input("Enter third color: "))
+colors = {a, b, c}
 
 print(colors)
